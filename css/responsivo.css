@@ -1,3 +1,13 @@
+@media (max-width: 1280px) {
+    .galeria-imersiva {
+        width: min(1120px, calc(100% - 28px));
+    }
+
+    .model-carousel {
+        max-width: 1040px;
+    }
+}
+
 @media (max-width: 1024px) {
     body {
         padding-top: 92px;
@@ -42,7 +52,8 @@
 
     .model-carousel {
         max-width: 900px;
-        min-height: 590px;
+        min-height: 560px;
+        transform: none !important;
     }
 
     .model-slide {
@@ -51,6 +62,26 @@
 
     .modelo-3d {
         width: 68%;
+    }
+}
+
+@media (max-width: 900px) {
+    .model-carousel {
+        max-width: 760px;
+        min-height: 520px;
+        transform: none !important;
+    }
+
+    .model-slide {
+        flex-basis: min(440px, 68vw);
+    }
+
+    .frame-nav-prev {
+        left: max(12px, calc(50% - 305px));
+    }
+
+    .frame-nav-next {
+        right: max(12px, calc(50% - 305px));
     }
 }
 
@@ -102,21 +133,26 @@
     }
 
     .model-carousel {
-        min-height: min(118vw, 520px);
-        overflow: hidden;
+        min-height: 0;
+        height: auto;
+        overflow: visible;
+        align-items: flex-start;
+        padding: 4px 0 8px;
         transform: none !important;
     }
 
     .model-track {
         width: 100%;
         justify-content: center;
+        align-items: flex-start;
         gap: 0;
         transform: none !important;
     }
 
     .model-slide {
         display: none;
-        flex: 0 0 min(82vw, 390px);
+        flex: 0 0 min(84vw, 390px);
+        width: min(84vw, 390px);
         margin: 0 auto;
         opacity: 0;
         transform: none;
@@ -132,6 +168,12 @@
         border-radius: 18px;
     }
 
+    .frame-stage {
+        width: 100%;
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
     .modelo-3d {
         top: 7%;
         width: 78%;
@@ -141,7 +183,7 @@
     .frame-nav {
         width: 52px;
         height: 52px;
-        top: 48%;
+        top: 42%;
     }
 
     .frame-nav span {
@@ -160,11 +202,11 @@
     }
 
     .frame-nav-prev {
-        left: 8px;
+        left: 10px;
     }
 
     .frame-nav-next {
-        right: 8px;
+        right: 10px;
     }
 }
 
@@ -251,11 +293,17 @@
     }
 
     .model-carousel {
-        min-height: min(124vw, 470px);
+        min-height: 0;
+        padding-top: 2px;
     }
 
     .model-slide {
-        flex-basis: min(88vw, 340px);
+        flex-basis: min(88vw, 350px);
+        width: min(88vw, 350px);
+    }
+
+    .frame-stage {
+        max-width: 350px;
     }
 
     .modelo-3d {
@@ -267,7 +315,7 @@
     .frame-nav {
         width: 44px;
         height: 44px;
-        top: 47%;
+        top: 41%;
     }
 
     .frame-nav span {
@@ -339,15 +387,30 @@
         padding: 22px 16px;
         border-radius: 28px;
     }
+
+    .galeria-imersiva {
+        width: min(100% - 12px, 100%);
+        padding-top: 8px;
+    }
+
+    .model-slide {
+        flex-basis: min(90vw, 340px);
+        width: min(90vw, 340px);
+    }
+
+    .frame-stage {
+        max-width: 340px;
+    }
 }
 
 @media (max-width: 360px) {
     .model-slide {
-        flex-basis: 90vw;
+        flex-basis: 92vw;
+        width: 92vw;
     }
 
     .model-carousel {
-        min-height: 430px;
+        min-height: 0;
     }
 
     .frame-nav-prev {

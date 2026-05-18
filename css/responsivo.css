@@ -108,18 +108,24 @@
     }
 
     .model-track {
-        gap: 18px;
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+        transform: none !important;
     }
 
     .model-slide {
-        flex-basis: min(82vw, 390px);
+        display: none;
+        flex: 0 0 min(82vw, 390px);
+        margin: 0 auto;
         opacity: 0;
-        transform: scale(0.82);
+        transform: none;
     }
 
     .model-slide.is-active {
+        display: block;
         opacity: 1;
-        transform: scale(1);
+        transform: none;
     }
 
     .frame-inner {

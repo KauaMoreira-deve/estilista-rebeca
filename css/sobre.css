@@ -142,10 +142,10 @@ img {
 .palco-3d {
     position: absolute;
     left: 61%;
-    bottom: clamp(58px, 9vh, 92px);
+    bottom: clamp(96px, 13vh, 150px);
     z-index: 1;
-    width: clamp(270px, 27vw, 470px);
-    height: clamp(430px, 65vh, 700px);
+    width: clamp(340px, 36vw, 480px);
+    height: clamp(520px, 88vh, 560px);
     transform: translateX(-50%);
     pointer-events: none;
 }
@@ -176,6 +176,27 @@ img {
     letter-spacing: 0.08em;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.referencia-look {
+    position: absolute;
+    left: clamp(310px, 28vw, 550px);
+    bottom: 300px;
+    z-index: 2;
+    width: 320px;
+    aspect-ratio: 0.72 / 1;
+    padding: 8px;
+   
+}
+
+.referencia-look img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: saturate(0.86) brightness(0.86) contrast(1.04);
+    
 }
 
 .linha-decorativa {
@@ -269,7 +290,7 @@ img {
 
 .look-card model-viewer {
     display: block;
-    width: 92px;
+    width: 108px;
     aspect-ratio: 0.74 / 1;
     border: 1px solid rgba(201, 154, 108, 0.34);
     background:
@@ -303,148 +324,4 @@ img {
     font-size: 28px;
     line-height: 1;
     cursor: pointer;
-}
-
-@media (min-width: 1600px) {
-    .galeria-imersiva {
-        background-size: 1600px auto;
-    }
-}
-
-@media (max-width: 1180px) {
-    .galeria-imersiva {
-        background-position: 48% center;
-        background-size: auto 86svh;
-    }
-
-    .menu-principal {
-        gap: 34px;
-    }
-
-    .looks-lista {
-        right: 22px;
-    }
-
-    .palco-3d {
-        left: 62%;
-        width: clamp(250px, 30vw, 390px);
-        height: 58vh;
-    }
-}
-
-@media (max-width: 900px) {
-    .topo {
-        grid-template-columns: 1fr auto;
-    }
-
-    .menu-principal {
-        display: none;
-    }
-
-    .galeria-imersiva {
-        background-position: 46% center;
-        background-size: auto 82svh;
-    }
-
-    .palco-3d {
-        left: 58%;
-        bottom: 96px;
-        width: min(58vw, 340px);
-        height: 56vh;
-    }
-
-    .looks-lista {
-        top: auto;
-        right: auto;
-        left: 28px;
-        bottom: 28px;
-        width: calc(100% - 56px);
-        display: flex;
-        align-items: end;
-        gap: 14px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        padding-bottom: 2px;
-    }
-
-    .look-card {
-        flex: 0 0 auto;
-        width: 72px;
-    }
-
-    .look-card model-viewer {
-        width: 70px;
-    }
-
-    .contador {
-        display: none;
-    }
-}
-
-@media (max-width: 620px) {
-    .topo {
-        padding: 22px 20px 0;
-    }
-
-    .marca {
-        font-size: 28px;
-    }
-
-    .menu-toggle {
-        width: 38px;
-    }
-
-    .galeria-imersiva {
-        background-position: 43% center;
-        background-size: auto 78svh;
-    }
-
-    .palco-3d {
-        left: 60%;
-        bottom: 108px;
-        width: min(64vw, 270px);
-        height: 48vh;
-    }
-
-    .look-info {
-        left: 22px;
-        bottom: 150px;
-        max-width: 270px;
-    }
-
-    .look-kicker {
-        font-size: 13px;
-        margin-bottom: 10px;
-    }
-
-    .look-info h1 {
-        font-size: 54px;
-    }
-
-    .linha-decorativa {
-        width: 210px;
-        margin-top: 22px;
-    }
-
-    .looks-lista {
-        left: 20px;
-        bottom: 20px;
-        width: calc(100% - 40px);
-    }
-
-    .look-card span {
-        font-size: 12px;
-    }
-
-    .look-card {
-        width: 62px;
-    }
-
-    .look-card model-viewer {
-        width: 58px;
-    }
-
-    .setas {
-        display: none;
-    }
 }

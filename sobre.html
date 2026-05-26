@@ -6,104 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beca Carneiro | Galeria</title>
     <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
+
+     <header class="topo">
+        <a class="topo-logo" href="index.html" aria-label="Voltar para a página inicial">
+            <img src="assets/BECA-preto.png" alt="Beca Carneiro">
+        </a>
+       
+    </header>
+
+
     <main class="galeria-imersiva" aria-label="Galeria da colecao">
        
         <section class="look-info" aria-labelledby="look-atual">
             <p class="look-kicker">Galeria</p>
             <h1 id="look-atual">Look 01</h1>
-            <span class="linha-decorativa" aria-hidden="true"></span>
+            
+        </section>
+
+        <section class="referencia-look" aria-label="Referencia visual do look">
+            <img id="referencia-atual" src="assets/WhatsApp Image 2026-04-01 at 23.19.06.jpeg"
+                alt="Referencia visual do Look 01">
         </section>
 
         <section class="palco-3d" aria-label="Modelo 3D selecionado">
             <model-viewer id="modelo-principal" class="modelo-principal"
-                src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb" alt="Modelo 3D do Look 01"
+                src="assets/Meshy_AI_Beige_Belted_Trench_w_0523201220_texture.glb" alt="Modelo 3D do Look 01"
                 shadow-intensity="1.6" exposure="1.05" interaction-prompt="none"
-                disable-pan disable-zoom camera-orbit="0deg 78deg auto"
-                min-camera-orbit="0deg 78deg auto" max-camera-orbit="0deg 78deg auto"
-                field-of-view="29deg"></model-viewer>
+                disable-pan disable-zoom camera-orbit="0deg 78deg 5m"
+                min-camera-orbit="0deg 78deg 5m" max-camera-orbit="0deg 78deg 5m"
+                field-of-view="22deg"></model-viewer>
         </section>
 
         <aside class="contador" aria-label="Look atual">
             <span id="contador-atual">01</span>
-            <span>08</span>
+            <span>10</span>
         </aside>
 
         <aside class="looks-lista" aria-label="Lista de looks">
 
             
             <button class="look-card ativo" type="button" data-look-index="0"
-                data-model-src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb" data-look-name="Look 01">
+                data-model-src="assets/Meshy_AI_Beige_Belted_Trench_w_0523201220_texture.glb"
+                data-image-src="assets/look1 (2).png" data-look-name="Look 01">
                 <span>Look 01</span>
-                <model-viewer src="assets/Meshy_AI_Burgundy_Draped_Tunic_0516040717_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Beige_Belted_Trench_w_0523201220_texture.glb"
                     alt="Miniatura 3D do Look 01" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="1"
-                data-model-src="assets/Meshy_AI_Costas_Denim_Lace_Up__0516035358_texture.glb" data-look-name="Look 02">
+                data-model-src="assets/Meshy_AI_Blush_Zip_Neck_Knit_w_0523202825_texture.glb"
+                data-image-src="assets/look2.png" data-look-name="Look 02">
                 <span>Look 02</span>
-                <model-viewer src="assets/Meshy_AI_Costas_Denim_Lace_Up__0516035358_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Blush_Zip_Neck_Knit_w_0523202825_texture.glb"
                     alt="Miniatura 3D do Look 02" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="2"
-                data-model-src="assets/Meshy_AI_Crimson_Lace_and_Pink_0516042011_texture.glb" data-look-name="Look 03">
+                data-model-src="assets/Meshy_AI_Burgundy_Off_Shoulder_0523203039_texture.glb"
+                data-image-src="assets/look3.png" data-look-name="Look 03">
                 <span>Look 03</span>
-                <model-viewer src="assets/Meshy_AI_Crimson_Lace_and_Pink_0516042011_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Burgundy_Off_Shoulder_0523203039_texture.glb"
                     alt="Miniatura 3D do Look 03" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="3"
-                data-model-src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0516031343_texture.glb" data-look-name="Look 04">
+                data-model-src="assets/Meshy_AI_Cream_Fuzzy_Zip_Coat__0523204006_texture.glb"
+                data-image-src="assets/look4.png" data-look-name="Look 04">
                 <span>Look 04</span>
-                <model-viewer src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0516031343_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Cream_Fuzzy_Zip_Coat__0523204006_texture.glb"
                     alt="Miniatura 3D do Look 04" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="4"
-                data-model-src="assets/Meshy_AI_Navy_Lace_Yoke_Top_wi_0516034803_texture.glb" data-look-name="Look 05">
+                data-model-src="assets/Meshy_AI_Crimson_Draped_Dress__0523202424_texture.glb"
+                data-image-src="assets/look5.png" data-look-name="Look 05">
                 <span>Look 05</span>
-                <model-viewer src="assets/Meshy_AI_Navy_Lace_Yoke_Top_wi_0516034803_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Crimson_Draped_Dress__0523202424_texture.glb"
                     alt="Miniatura 3D do Look 05" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="5"
-                data-model-src="assets/Meshy_AI_Front_View_Outfit_0516035830_texture.glb" data-look-name="Look 06">
+                data-model-src="assets/Meshy_AI_Leopard_Luxe_Ensemble_0523203907_texture.glb"
+                data-image-src="assets/look6.png" data-look-name="Look 06">
                 <span>Look 06</span>
-                <model-viewer src="assets/Meshy_AI_Front_View_Outfit_0516035830_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Leopard_Luxe_Ensemble_0523203907_texture.glb"
                     alt="Miniatura 3D do Look 06" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
 
             <button class="look-card" type="button" data-look-index="6"
-                data-model-src="assets/Meshy_AI_Crimson_Leather_and_C_0516040229_texture.glb" data-look-name="Look 07">
+                data-model-src="assets/Meshy_AI_Maroon_Leather_and_Cr_0523202151_texture.glb"
+                data-image-src="assets/look7.png" data-look-name="Look 07">
                 <span>Look 07</span>
-                <model-viewer src="assets/Meshy_AI_Crimson_Leather_and_C_0516040229_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Maroon_Leather_and_Cr_0523202151_texture.glb"
                     alt="Miniatura 3D do Look 07" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
             
             <button class="look-card" type="button" data-look-index="7"
-                data-model-src="assets/Meshy_AI_Front_View_Pearl_Embe_0516041201_texture.glb" data-look-name="Look 08">
+                data-model-src="assets/Meshy_AI_Navy_Lace_Up_Top_with_0523203547_texture.glb"
+                data-image-src="assets/look8.png" data-look-name="Look 08">
                 <span>Look 08</span>
-                <model-viewer src="assets/Meshy_AI_Front_View_Pearl_Embe_0516041201_texture.glb"
+                <model-viewer src="assets/Meshy_AI_Navy_Lace_Up_Top_with_0523203547_texture.glb"
                     alt="Miniatura 3D do Look 08" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
-                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="32deg"></model-viewer>
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
+            </button>
+
+            <button class="look-card" type="button" data-look-index="8"
+                data-model-src="assets/Meshy_AI_Pearl_Trim_Navy_Lace__0523201437_texture.glb"
+                data-image-src="assets/look9.png" data-look-name="Look 09">
+                <span>Look 09</span>
+                <model-viewer src="assets/Meshy_AI_Pearl_Trim_Navy_Lace__0523201437_texture.glb"
+                    alt="Miniatura 3D do Look 09" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
+            </button>
+
+            <button class="look-card" type="button" data-look-index="9"
+                data-model-src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0523201807_texture.glb"
+                data-image-src="assets/look10.png" data-look-name="Look 10">
+                <span>Look 10</span>
+                <model-viewer src="assets/Meshy_AI_Pearl_Trim_Pink_Palaz_0523201807_texture.glb"
+                    alt="Miniatura 3D do Look 10" shadow-intensity="1" exposure="1.05" interaction-prompt="none"
+                    disable-pan disable-zoom camera-orbit="0deg 78deg auto" field-of-view="27deg"></model-viewer>
             </button>
 
             <div class="setas">

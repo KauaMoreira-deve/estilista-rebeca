@@ -1,4 +1,5 @@
 const mainModel = document.querySelector("#modelo-principal");
+const currentReference = document.querySelector("#referencia-atual");
 const lookTitle = document.querySelector("#look-atual");
 const currentCounter = document.querySelector("#contador-atual");
 const lookCards = Array.from(document.querySelectorAll(".look-card"));
@@ -19,13 +20,21 @@ function updateLook(index) {
 
   const selectedCard = lookCards[currentLookIndex];
   const modelSrc = selectedCard.dataset.modelSrc;
+  const imageSrc = selectedCard.dataset.imageSrc;
   const lookName = selectedCard.dataset.lookName || `Look ${formatLookNumber(currentLookIndex)}`;
 
   if (mainModel && modelSrc) {
     mainModel.setAttribute("src", modelSrc);
     mainModel.setAttribute("alt", `Modelo 3D do ${lookName}`);
-    mainModel.setAttribute("camera-orbit", "0deg 78deg auto");
-    mainModel.setAttribute("field-of-view", "29deg");
+    mainModel.setAttribute("camera-orbit", "0deg 78deg 5m");
+    mainModel.setAttribute("min-camera-orbit", "0deg 78deg 5m");
+    mainModel.setAttribute("max-camera-orbit", "0deg 78deg 5m");
+    mainModel.setAttribute("field-of-view", "22deg");
+  }
+
+  if (currentReference && imageSrc) {
+    currentReference.setAttribute("src", imageSrc);
+    currentReference.setAttribute("alt", `Referencia visual do ${lookName}`);
   }
 
   if (lookTitle) {
